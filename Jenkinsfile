@@ -26,7 +26,7 @@ pipeline {
                 script {
                     // Install dependencies and start the application
                     sh 'npm install'
-                    sh 'npm start
+                    sh 'npm start'
                 }
             }
         }
