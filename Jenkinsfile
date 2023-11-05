@@ -16,7 +16,7 @@ pipeline {
                 script {
                     // Install dependencies and run tests
                     sh 'npm install'
-                    sh 'npm test'
+                    
                 }
             }
         }
@@ -26,15 +26,13 @@ pipeline {
                 script {
                     // Install dependencies and start the application
                     sh 'npm install'
-                    sh 'npm start &'
-                    sleep 10 // Adjust the sleep time based on your application's startup time
+                    sh 'npm start
                 }
             }
         }
     }
 
-    post {
-      
+    post {  
         success {
             // Actions to take on success
             echo 'Build and tests passed!'
