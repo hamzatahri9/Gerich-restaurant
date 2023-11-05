@@ -34,11 +34,7 @@ pipeline {
     }
 
     post {
-        always {
-            // Cleanup steps, if needed
-            sh 'npm stop' // Assuming there's a stop command to gracefully shutdown the application
-        }
-
+      
         success {
             // Actions to take on success
             echo 'Build and tests passed!'
