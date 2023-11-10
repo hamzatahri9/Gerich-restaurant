@@ -24,9 +24,8 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // Install dependencies and start the application
-                    sh 'npm install'
-                    sh 'npm start'
+                    // Install dependencies and start the applicatio
+                    sh 'npm test'
                 }
             }
         }
